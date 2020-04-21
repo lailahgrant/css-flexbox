@@ -1,0 +1,45 @@
+/*Finally understanding Flexbox flex-grow, flex-shrink and flex-basis*/
+
+.box {
+	color: white;
+	font-size: 50px;
+	text-align: center;
+	text-shadow: 4px 4px 0 rgba(0,0,0,0.1);
+	padding: 10px;
+}
+
+/*Colors for each box*/
+.box1{ background: #1abc9c ; }
+.box2 { background: #3498db ;}
+
+
+.container {
+	display: flex;
+}
+
+/*.box {*/
+	/*flex:1; -is the shorthand for flex-grow:1; & flex-shrink:1; */
+	/*flex-grow: 1; the elements grow to fill up the space*/
+	/*flex-shrink - how we slim things incase the device reduces*/
+	/*flex-shrink: 1; -default (no room for elements*/
+/*it is like the padding*/
+	/*flex-basis: ;	*/
+/*}*/
+
+
+.box1 {
+	flex-basis: 400px; /*gives space on the right & left*/
+	flex-grow: 2;
+}
+.box2{
+
+	/*flex shorthand
+	flex:flex-grow flex-shrink flex-basis;
+	*/
+	flex: 10 5 400px; /*recommended*/
+
+	/*flex-basis: 400px;
+	flex-grow: 10;*/
+	/*flex-shrink: 10;*/
+
+}

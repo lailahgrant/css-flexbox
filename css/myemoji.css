@@ -1,0 +1,57 @@
+/*How Flexbox's flex-basis and wrapping work together*/
+
+.box {
+	color: white;
+	font-size: 50px;
+	text-align: center;
+	text-shadow: 4px 4px 0 rgba(0,0,0,0.1);
+	padding: 10px;
+}
+/*Colors for each box*/
+.box1{ background: #1abc9c ; }
+.box2 { background: #3498db ;}
+.box3 { background: #9b59b6 ;}
+.box4 { background: #34495e ;}
+.box5 { background: #f1c40f ;}
+.box6 { background: #e67e22;}
+.box7 { background: #e74c3c;}
+.box8 { background: #bdc3c7;}
+.box9 { background: #2ecc71;}
+.box10 { background: #16a085;}
+
+
+/*We start writing out flexbox here. The above is just page setup*/
+.container {
+	display: flex;
+	/*for the flex-basis to work so we can see each box as 500px, add flex-wrap:wrap;*/
+	flex-wrap: wrap; /*2 columns are created,creates extra space on the right, to get rid of that space use flex-grow */
+}
+
+/*place on every box*/
+.box {
+	flex-basis:500px; /*it widens throughtout the whole width*/
+	/*to get rid of that space on the right, use flex-grow*/
+	flex-grow:1; 
+}
+
+.box3{
+	flex-grow: 10;
+}
+
+
+/*
+.container{
+display:flex;
+flex-wrap:wrap;
+flex-direction:column; puts elements across the cross axis(in columns)
+border:10px solid goldenrod;
+min-heigh:100vh; places items all over the column
+if you use the fllowing height, makes boxes of flex-box
+height:100vh;
+}
+.box{
+	flex-basis:250px;
+	flex-grow:1;
+}
+
+ */

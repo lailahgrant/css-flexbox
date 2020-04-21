@@ -1,0 +1,75 @@
+/*styles for the content in the divs*/
+.box {
+	color: white;
+	font-size: 100px;
+	text-align: center;
+	text-shadow: 4px 4px 0 rgba(0,0,0,0.1);
+	padding: 10px;
+}
+
+/*color of each box*/
+.box1 { background: #1abc9c ;}
+.box2 { background: #3498db ;}
+.box3 { background: #9b59b6 ;}
+.box4 { background: #34495e ;}
+.box5 { background: #f1c40f ;}
+.box6 { background: #e67e22;}
+.box7 { background: #e74c3c;}
+.box8 { background: #bdc3c7;}
+.box9 { background: #2ecc71;}
+.box10 { background: #16a085;}
+
+/* we start writing a flexbox down here */
+.container {
+	/* display: inline-flex; spans around to only the end of the last content */
+	display: flex; /* goes from left to right*/
+	border: 10px solid goldenrod;
+	/* vh - viewport height - element stretches the entire height (it is like 100% height) */
+	/* height:100vh; */
+	min-height: 100vh;
+
+	/* flex directions */
+	/* flex-direction: row; default - display them vertically(from left to right) */
+	/* flex-direction: column; stacks things horixontally */
+	/* flex direction depends on axis eg flex-direction: row uses  main-axis which is left to right 
+		flex-direction: column uses  cross-axis which is top to bottom	
+		flex-direction: row-reverse uses  main-axis which is right to left but reverses content, the last content comes first
+		flex-direction: column-reverse; uses cross-axis which is bottom to top  but reverses content, the last content comes first
+	*/
+
+
+	/* flex-wrap 
+	by default it is flex-wrap:nowrap;
+	if width is given as the one below in the .box{...}, flex-wrap:wrap; puts them as cubes(in boxes in different rows)
+	the boxes have different heights right from the (min-height:100vh) & if that height wasn't given, they would all be on one line(width) & just take up the height of the letters in the divs 
+	*/
+	flex-wrap: wrap;
+	/* flex-wrap: wrap-reverse; */
+
+	
+
+}
+
+
+
+/* flex items */
+.box {
+	/* the boxes are evenly distributed along the screen */
+	/* width: 300px; */
+	 width: 33.3333333%;/* for responsiveness */
+	 /* width: calc(33.3333333% -10px); - removes 10px margin on both sides */
+	/* margin: 10px;gives spaces  */
+}
+
+
+/* if we set 
+		.container {
+			display:flex;
+			height:100vh;
+			flex-wrap: wrap;
+			flex-direction: column;
+		}
+		.box {
+			width:33.3333333%;
+		}
+*/
