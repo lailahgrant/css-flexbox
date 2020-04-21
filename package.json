@@ -1,0 +1,23 @@
+{
+  "name": "css-flexbox",
+  "version": "1.0.0",
+  "description": "```\r CSS Flexbox tutorials by WesBros\r what is a Flexbox?\r 1. Introduction to FlexBox\r 2. Working with flex-direction\r 3. Wapping elements with Flexbox\r 4. Flexbox ordering\r 5. Flexbox alignment and centering with justtify-content\r 6. Alignment and centering with align-items\r 7. Alignment and centering with align-content\r 8. Alignment and centering with align-self\r 9. Understanding Flexbox with the flex property\r 10. Finally understanding Flexbox flex-grow, flex-shrink and flex-basis\r 11. How Flexbox's flex-basis & wrapping work together\r 12. Cross browser flexbox support & Autoprefixer\r 13. Pure flexbox navigation code basis\r 14. Mobile content reordering with flexbox\r -",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lailahgrant/css-flexbox.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lailahgrant/css-flexbox/issues"
+  },
+  "homepage": "https://github.com/lailahgrant/css-flexbox#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1"
+  }
+}

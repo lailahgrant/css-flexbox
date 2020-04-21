@@ -36,4 +36,17 @@ what is a Flexbox?
 >CSS tricks 
 [css tricks](https://css-tricks.com/old-flexbox-and-new-flexbox/)
 
-
+>add Gulp js in terminal(run cmd as an administrator - use it for all these commands)
+[Gulp.js](https://gulpjs.com/)
+- have nodejs installed
+    - `node -v`
+- we need a package.json file - it keeps track of our dependencies    
+    - `npm init`
+- install gulp globally
+    - `npm install gulp -g`
+>In the following, cd into your work directory    
+- create a gulp.js file which will hold the process of what we are doing    
+- install some plugins of gulp like:
+    - the  `local version of gulp` as  `npm install gulp --save-dev` 
+    - the `gulp autoprefixer` as `npm install gulp-autoprefixer --save-dev`
+- Write in your gulpfile.js
